@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: url('../img/tuBackground.jpg') no-repeat;
+    background-size: cover;
+}
+
+.login-container {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+/* ปรับปรุงสไตล์ให้กับ dropdown (select) */
+select {
+    width: 100%;
+    height: 50px; /* ขนาดความสูง */
+    background: transparent; /* พื้นหลังโปร่งใส */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* ขอบที่เด่นชัด */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    color: rgb(255, 255, 255); /* สีตัวอักษร */
+    padding: 15px 20px; /* Padding เพื่อให้มีระยะห่าง */
+    appearance: none; /* ซ่อนลูกศรของ dropdown */
+    background-color: rgba(0, 0, 0, 0.5); /* เพิ่มพื้นหลังเบา ๆ */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* เอฟเฟกต์การเปลี่ยนแปลงขอบ */
+}
+
+/* สไตล์เมื่อ dropdown ถูกโฟกัส */
+select:focus {
+    outline: none; /* เอาเส้นขอบโฟกัสออก */
+    border-color: rgba(255, 255, 255, 1); /* เปลี่ยนสีขอบเมื่อโฟกัส */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7); /* เพิ่มเงาเมื่อโฟกัส */
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border: none;
+    color: rgb(128, 0, 0);
+    cursor: pointer;
+    border-radius: 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffd988;
+    transform: scale(1.05);
+}
+
+#message {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#popup-message {
+    background: white; /* พื้นหลังของ popup */
+    padding: 20px; /* ระยะห่างภายใน */
+    border-radius: 10px; /* มุมมน */
+    max-width: 400px; /* ความกว้างสูงสุด */
+    text-align: left; /* จัดแนวข้อความทางซ้าย */
+    color: black; /* สีข้อความ */
+}
